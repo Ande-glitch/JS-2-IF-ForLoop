@@ -1,7 +1,7 @@
 <h1 align="center">Javascript 2 IF-ForLoop</h1>
 <div align="center">
   <h3>
-    <a href="https://ande-glitch.github.io/Media-Query-2/">
+    <a href="https://ande-glitch.github.io/JS-2-IF-ForLoop/">
       Link to project
     </a>
   </h3>
