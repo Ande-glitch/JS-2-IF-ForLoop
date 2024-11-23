@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset>
+        <h2>Oppgave 1</h2>
+        <p>Oddetall eller partall?</p>
+        <input type="number" id="oddpar">
+        <button onclick="myOdds()">Sjekk her</button>
+        <p id="odddemo"></p>
+        <h2>Oppgave 2</h2>
+        <p>Kategorisering av alder</p>
+        <input type="number" id="age">
+        <button onclick="myAlder()">Sjekk her</button>
+        <p id="agedemo"></p>
+        <h2>Oppgave 3</h2>
+        <p>Logg inn sjekk</p>
+        <input type="email" id="username">
+        <input type="password" id="password">
+        <button onclick="myLogin()">Logg Inn</button>
+        <p id="logged"></p>
+        <h2>Oppgave 4</h2>
+        <p>Måneds årstid</p>
+        <input type="number" id="måned" max="12" min="1">
+        <button onclick="myMonth()">Sjekk her</button>
+        <p id="month"></p>
+        <h2>Oppgave 5</h2>
+        <p>BMI kalkulator (skriv høyde med meter)</p>
+        <label for="number">Weight</label>
+        <input type="number" id="weight">
+        <label for="number">Height</label>
+        <input type="number" id="height">
+        <button onclick="myBmi()">Sjekk her</button>
+        <p id="bmi"></p>
+        <h2>Oppgave 6</h2>
+        <p>Billettpris</p>
+        <label for="number">Velg din aldersgruppe</label>
+        <select name="number" id="range">
+            <option value="barn" id="barn">Barn</option>
+            <option value="student" id="student">Student</option>
+            <option value="voksen" id="voksen">Voksen</option>
+            <option value="pensjonist" id="pensjonist">Pensjonist</option>
+        </select>
+        <button onclick="myTicket()">Sjekk her</button>
+        <br>
+        <p id="ticket"></p>
+    </fieldset>
+    <script src="./script.js"></script>
+</body>
+</html>
