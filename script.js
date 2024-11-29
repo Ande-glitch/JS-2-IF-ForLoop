@@ -46,25 +46,44 @@ function myLogin() {
 // Oppgave 4
 
 function myMonth() {
-    const måneder = ["Januar", "Februar", "Mars", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Desember"];
-    var månedTall = parseInt(document.getElementById("måned").value);
+    // const måneder = ["Januar", "Februar", "Mars", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Desember"];
+    // var månedTall = parseInt(document.getElementById("måned").value);
+    // var shortcut = document.getElementById("month");
+ 
+    // var riktigMåned = måneder[månedTall-1]
+ 
+    // if (riktigMåned == "Desember" || riktigMåned =="Januar" || riktigMåned =="Februar") {
+    //     var årstid = "vinter"
+    // }
+    // else if (riktigMåned == "Mars" || riktigMåned =="April" || riktigMåned =="Mai") {
+    //     var årstid = "vår"
+    // }
+    // else if (riktigMåned == "Juni" || riktigMåned =="Juli" || riktigMåned =="August") {
+    //     var årstid = "sommer"
+    // }
+    // else if (riktigMåned == "September" || riktigMåned =="Oktober" || riktigMåned =="November") {
+    //     var årstid = "Høst"
+    // }
+    // shortcut.innerHTML = " I " + riktigMåned + "  er årstiden " + årstid
+
+    const months = ["Januar", "Februar", "Mars", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Desember"];
+    var monthnumber = parseInt(document.getElementById("måned").value);
     var shortcut = document.getElementById("month");
- 
-    var riktigMåned = måneder[månedTall-1]
- 
-    if (riktigMåned == "Desember" || riktigMåned =="Januar" || riktigMåned =="Februar") {
-        var årstid = "vinter"
+
+    var rightmonth = months[monthnumber-1]
+
+    if (rightmonth == "Desember" || rightmonth == "Januar" || rightmonth == "Februar") {
+        shortcut.innerHTML = rightmonth + " er vinter"
+    } 
+    else if (rightmonth == "Mars" || rightmonth == "April" || rightmonth == "Mai") {
+        shortcut.innerHTML = rightmonth + " er vår"
     }
-    else if (riktigMåned == "Mars" || riktigMåned =="April" || riktigMåned =="Mai") {
-        var årstid = "vår"
+    else if (rightmonth == "Juni" || rightmonth == "Juli" || rightmonth == "August") {
+        shortcut.innerHTML = rightmonth + " er sommer"
     }
-    else if (riktigMåned == "Juni" || riktigMåned =="Juli" || riktigMåned =="August") {
-        var årstid = "sommer"
+    else if (rightmonth == "September" || rightmonth == "Oktober" || rightmonth == "November") {
+        shortcut.innerHTML = rightmonth + " er høst" 
     }
-    else if (riktigMåned == "September" || riktigMåned =="Oktober" || riktigMåned =="November") {
-        var årstid = "Høst"
-    }
-    shortcut.innerHTML = " I " + riktigMåned + "  er årstiden " + årstid
 }
 
 // Oppgave 5 
